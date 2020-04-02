@@ -7,11 +7,11 @@
 function sprawdz()
 {
 
-	var liczba = document.getElementById("pole").value;
-	if(liczba.match(/^[a-zA-Z0-9-_.]+@[a-z0-9-.]+.[a-z0-9]{1,4}$/))
-	alert(liczba + " to poprawny email");
+	var email = document.getElementById("pole").value;
+	if(email.match(/^[a-zA-Z0-9-_.]+@[a-z0-9-.]+.[a-z0-9]{1,4}$/))
+	alert(email + " to poprawny email");
 	else
-	alert(liczba + " to niepoprawny email");
+	alert(email + " to niepoprawny email");
 	
 }
 
