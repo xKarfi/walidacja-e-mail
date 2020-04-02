@@ -1,0 +1,32 @@
+<html lang ="pl">
+<head>
+<meta charset="utf-8"/>
+
+<script>
+
+function sprawdz()
+{
+
+	var liczba = document.getElementById("pole").value;
+	if(liczba.match(/^[a-zA-Z0-9-_.]+@[a-z0-9-.]+.[a-z0-9]{1,4}$/))
+	alert(liczba + " to poprawny email");
+	else
+	alert(liczba + " to niepoprawny email");
+	
+}
+
+</script>
+
+</head>
+
+<body>
+
+<input type="text" id="pole"/>
+<input type="submit" value= "sprawdz" onclick="sprawdz()"/>
+  
+
+
+</body>
+
+
+</html>
